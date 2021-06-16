@@ -6,9 +6,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="containerHeader"> 
+        <h2>BANCO LABAMA</h2>
+      </div>
+    </header>
+    <main>
+      <div class="containerPrincipal">
+        <div class="containerImg">
+          <img src="images/principal3.jpg" alt="">
+        </div>
+        <div class="containerContent"  id="cajaUno">
+          <form action="" name="myForm" id="formulario" class="formulario" >
+            <label for="numberCardd">Número de tarjeta: </label>
+            <input type="text" name="numberCardd" id="numberCard"  placeholder="0000 0000 0000 0000"  minlength="13" maxlength="16"  required> 
+            <section id="menssageAlert">
+              <p id="menssageFinal"></p>
+            </section>
+            <section id="menssageAlert2" style="display:none;"></section>
+            
+            <input type="submit" value="Validar " id="btnNumberCard" class="btnNumCard">
+            
+          </form>
+        </div>
+        <div class="containerContent" id="result">
+          <h2> Tarjeta Valida </h2>
+          <p id="maskifyTotal"></p>
+        </div>
+      </div>
+      
+    </main>
+    
+    <footer>
+      <div class="containerFooter">
+        <h3 >© 2021 Banco Labama | Todos los derechos reservados.</h3>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
+
