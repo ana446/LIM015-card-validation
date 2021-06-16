@@ -7,7 +7,7 @@ const validator = {
         newNumberCard = newNumberCard.map(digit => digit > 9 ? digit - 9 : digit);
         let suma = newNumberCard.reduce((accNuevo , valorNuevo) => accNuevo + valorNuevo);
         if (suma % 10 === 0){
-            return true;
+            return true; 
         }else {
             return false;
         }
