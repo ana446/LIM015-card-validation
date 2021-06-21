@@ -16,15 +16,13 @@ const validator = {
   maskify: function(e) { 
 
      return e.split('').map((digit,idx)=>idx < e.length - 4 ? '#' : digit).join('');
-    
-    // if (e.length == 13 ){
-    //    return e.replace(/\d{9}(\d{4})/, "#########$1");
-      
-    // }
-    // if (e.length == 16) {
-    //   return e.replace(/\d{12}(\d{4})/, "############$1")
-    // }
-    
+   /* if (e.length == 13 ){
+       return e.replace(/\d{9}(\d{4})/, "#########$1");
+    }
+    if (e.length == 16) {
+      return e.replace(/\d{12}(\d{4})/, "############$1")
+    }
+    */
   }
 };
 
