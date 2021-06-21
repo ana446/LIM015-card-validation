@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    
 }
 footer , header{
     position: fixed;
@@ -26,6 +27,7 @@ footer{
 .containerPrincipal{
      display: flex; 
      font-size: 18px;
+     
 }
 /* .containerPrincipal div{
      flex: 1; 
@@ -34,12 +36,12 @@ footer{
         display: flex;
         justify-content: center;
         width:60%;
-        background-color: #5CADDE;
+        
         
     }
     .containerImg img {
-        background-size: cover;
-        background-position: center;
+        
+        background-position: left;
     }
     .containerContent{
         display: flex; 
@@ -49,7 +51,7 @@ footer{
         padding: 20px;
         margin-top: 100px;
         border-radius: 6px;
-        background: #fff;
+        
     }
     
 .containerContent label {
@@ -58,10 +60,11 @@ footer{
 input[type="text"]{
     width: 100%;
     padding: 5px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: 2px solid #181214e8;
     border-radius: 6px;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 input[type="submit"]{
@@ -71,12 +74,17 @@ input[type="submit"]{
     margin-left: 200px;
     margin-top: 10px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 18px;
    
 }
 
+label{
+    font-weight: bold;
+    font-size: 24px;
+}
+
 /*mensaje de alerta*/
-#menssageAlert {
+#AlertMessage {
     color: red;
     display: none;
     
@@ -84,4 +92,47 @@ input[type="submit"]{
 
 #result{
     display: none;
+    
+}
+
+.boxMaskify{
+    margin: 20px;
+    text-align: center;
+    padding: 5px;
+    
+}
+.servicios{
+    display: flex; 
+    margin: 5px;
+    padding:10px;
+    border: 2px solid #c88800 ;
+    border-radius: 5px;
+}
+.servicios img {
+    display: flex; 
+    margin: 5px;
+    width: 6%;
+}
+.boxServices p{
+    padding: 5px;
+    
+
+
+}
+.boxServices{
+    border-radius: 5px;
+    margin : 10px;
+    
+}
+
+.servicios:hover{
+    background-color: #001e38;
+    color: #fff;
+    border: 2px solid #c88800;
+    border-radius: 6px;
+    
+}
+
+h2 , p{
+    padding: 5px;
 }

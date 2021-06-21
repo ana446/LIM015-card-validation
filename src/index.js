@@ -20,16 +20,19 @@ validatorBtn.addEventListener('click', (e) => {
        if ((numberCard.length == 13 || numberCard.length ==16) && numberCard.length != 0){
             let validarFinal = validator.isValid(numberCard);
             if (validarFinal == true ){
-                document.getElementById("cajaUno").style.display="none";
+                document.getElementById("boxOne").style.display="none";
                 document.getElementById("result").style.display="block";
                 document.getElementById("maskifyTotal").innerText= validator.maskify(numberCard);
             }
             else  {
-                mostrarMensage()
+                 mostrarMensage()
+                formulario.reset();
             }
         }
         else {
+            
             mostrarMensage2()
+            formulario.reset();
        }
      
 });
@@ -37,22 +40,22 @@ validatorBtn.addEventListener('click', (e) => {
 //mostrar y ocultar mensages
 function mostrarMensage() {
     setTimeout(function(){
-        document.getElementById("menssageAlert").style.display = "block";
-        document.getElementById("menssageFinal").innerText = "Tarjeta Invalida. Ingrese el número de tarjeta";
+        document.getElementById("AlertMessage").style.display = "block";
+        document.getElementById("finalAlertMessage").innerText = "Tarjeta Invalida. Ingrese el número de tarjeta";
 
-    },100);
+    },1000);
     setTimeout(function(){
-        document.getElementById("menssageAlert").style.display="none";
+        document.getElementById("AlertMessage").style.display="none";
     },3000);
 }
 
 function mostrarMensage2() {
     setTimeout(function(){
-        document.getElementById("menssageAlert").style.display = "block";
-        document.getElementById("menssageFinal").innerText = "Número de digitos incorrectos";
-    },100);
+        document.getElementById("AlertMessage").style.display = "block";
+        document.getElementById("finalAlertMessage").innerText = "Número de digitos incorrectos";
+    },1000);
     setTimeout(function(){
-        document.getElementById("menssageAlert").style.display="none";
+        document.getElementById("AlertMessage").style.display="none";
     },3000);
     
 }
