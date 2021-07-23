@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="containerHeader"> 
+        <h2>BANCO LABAMA</h2>
+      </div>
+    </header>
+    <main>  
+      <div class="containerPrincipal">
+        <div class="containerImg">
+          <img src="images/principal33.jpg" alt="">
+        </div>
+        <div class="containerContent"  id="boxOne">
+          <form action="" name="myForm" id="formulario" class="formulario" >
+            <label for="numberCardd">Número de tarjeta: </label>
+            <input type="text" name="numberCardd" id="numberCard"  placeholder="0000 0000 0000 0000"  required> 
+            <section id="AlertMessage">
+              
+              <p id="finalAlertMessage"></p>
+            </section>
+            <input type="submit" value="Validar " id="btnNumberCard" class="btnNumCard">
+          </form>
+        </div>
+        <div class="containerContent" id="result">
+          <div class="boxMaskify">
+            <h2> Bienvenid@: Tarjeta Valida  </h2>
+            <p id="maskifyTotal"></p>
+          </div>
+          
+          <div class="boxServices">
+            <div class="servicios">
+              <img src="images/ico111.png">
+              <p>Consultas</p>
+            </div>
+            <div class="servicios">
+              <img src="images/ico22.png">
+              <p>Pagos de tarjeta de crédito</p>
+            </div>
+            <div class="servicios">
+              <img src="images/ico33.png">
+              <p>Pagos de servicios</p>
+            </div>
+            <div class="servicios">
+              <img src="images/ico44.png">
+              <p>Configuración de tarjetas</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <footer>
+      <div class="containerFooter">
+        <h3 >© 2021 Banco Labama | Todos los derechos reservados.</h3>
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+
+
